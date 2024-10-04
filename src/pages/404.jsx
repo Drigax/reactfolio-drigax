@@ -31,14 +31,13 @@ const Notfound = () => {
 								Oops! <FontAwesomeIcon icon={faFaceSadTear} />
 							</div>
 							<div className="not-found-message">
-								We can't seem to find the page you're looking
-								for.
+								Huh, I can't seem to find that page.
 								<br />
-								The requested URL "{window.location.href}" was
+								Your requested URL "{window.location.href}" was
 								not found on this server.
 							</div>
 							<a href="/" className="not-found-link">
-								Go back to the home page
+								Get me out of here!
 							</a>
 						</div>
 					</div>
