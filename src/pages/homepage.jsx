@@ -8,6 +8,8 @@ import {
 	faGithub,
 	faStackOverflow,
 	faInstagram,
+	faLinkedin,
+	faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -19,7 +21,7 @@ import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import ARTICLES_DATA from "../data/articles";
 
 import "./styles/homepage.css";
 
@@ -103,10 +105,13 @@ const Homepage = () => {
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
-										<img
-											src="homepage.jpg"
-											alt="about"
+										<video
+											src="videos/rainbow-cascade-v3.webm"
+											type="video/webm"
+											alt="Rainbow Cascade! A procedurally generated rainbow scene"
 											className="homepage-image"
+											autoplay="true"
+											loop="true"
 										/>
 									</div>
 								</div>
@@ -125,6 +130,16 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
+								href={INFO.socials.mastodon}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faMastodon}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
 								href={INFO.socials.github}
 								target="_blank"
 								rel="noreferrer"
@@ -135,12 +150,12 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -172,16 +187,16 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
+								{ARTICLES_DATA.articles.map((article, index) => (
 									<div
 										className="homepage-article"
 										key={(index + 1).toString()}
 									>
 										<Article
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
+											date={article.date}
+											title={article.title}
+											description={article.description}
 											link={"/article/" + (index + 1)}
 										/>
 									</div>

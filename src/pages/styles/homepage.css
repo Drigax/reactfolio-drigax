@@ -44,10 +44,14 @@
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
-	transform: rotate(3deg);
+	transform: rotate(5deg);
 }
 
 .homepage-image-wrapper img {
+	width: 100%;
+}
+
+.homepage-image-wrapper video {
 	width: 100%;
 }
 

@@ -8,7 +8,7 @@ import Article from "../components/articles/article";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import ARTICLES_DATA from "../data/articles";
 
 import "./styles/articles.css";
 
@@ -50,20 +50,20 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
+								{ARTICLES_DATA.articles.map((article, index) => (
 									<div
 										className="articles-article"
 										key={(index + 1).toString()}
 									>
 										<Article
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={article().override_link ? article().override_link : "/article/" + (index + 1)}
+											date={article.date}
+											title={article.title}
+											description={article.description}
+											link={article.override_link ? article.override_link : "/article/" + (index + 1)}
 										/>
 									</div>
-								))}
+								)).reverse()}
 							</div>
 						</div>
 					</div>
