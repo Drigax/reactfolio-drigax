@@ -8,10 +8,24 @@
 }
 
 .homepage-article:hover {
-	background: #fafafa;
+	background: var(--quaternary-color);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
+
+.homepage-article-inner {
+	width: 90%;
+	mix-blend-mode: normal;
+	border-radius: 20px;
+	opacity: 0.8;
+}
+
+.homepage-article-inner:hover {
+	background: var(--quaternary-color);
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
 
 .homepage-article-content {
 	padding: 30px;
@@ -19,22 +33,37 @@
 
 .homepage-article-date {
 	opacity: 1;
-	color: var(--tertiary-color);
+	color: var(--secondary-text-color);
 	font-size: 12px;
 	margin-bottom: 1em;
 }
 
 .homepage-article-title {
 	opacity: 1;
-	color: var(--primary-color);
+	color: var(--primary-text-color);
 	font-size: 16px;
 	margin-bottom: 1em;
 	font-weight: 700;
 }
 
+.homepage-article:hover .homepage-article-title {
+	color: var(--primary-text-color-hover);
+	transition: color 0.3s ease-in-out;
+}
+
+.homepage-article:hover .homepage-article-date {
+	color: var(--secondary-text-color-hover);
+	transition: color 0.3s ease-in-out;
+}
+
+.homepage-article:hover .homepage-article-description {
+	color: var(--secondary-text-color-hover);
+	transition: color 0.3s ease-in-out;
+}
+
 .homepage-article-description {
 	opacity: 1;
-	color: var(--secondary-color);
+	color: var(--secondary-text-color);
 	font-size: 12px;
 	line-height: 1.5;
 }

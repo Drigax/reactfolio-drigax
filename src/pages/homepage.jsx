@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
 	faGithub,
-	faStackOverflow,
+	faBluesky,
 	faInstagram,
 	faLinkedin,
 	faMastodon,
@@ -109,7 +109,7 @@ const Homepage = () => {
 											src="videos/rainbow-cascade-v3.webm"
 											type="video/webm"
 											alt="Rainbow Cascade! A procedurally generated rainbow scene"
-											className="homepage-image"
+											className="homepage-video"
 											autoplay="true"
 											loop="true"
 										/>
@@ -126,6 +126,16 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faTwitter}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.bluesky}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faBluesky}
 									className="homepage-social-icon"
 								/>
 							</a>

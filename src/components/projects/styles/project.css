@@ -12,9 +12,19 @@
 }
 
 .project:hover {
-	background: #fafafa;
+	background: var(--quaternary-color);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
+}
+
+.project:hover .project-title {
+	color: var(--primary-text-color-hover);
+	transition: color 0.3s ease-in-out;
+}
+
+.project:hover .project-description {
+	color: var(--secondary-text-color-hover);
+	transition: color 0.3s ease-in-out;
 }
 
 .project:hover .project-link {
@@ -36,7 +46,7 @@
 
 .project-title {
 	font-family: var(--secondary-font);
-	color: var(--primary-color);
+	color: var(--primary-text-color);
 	font-size: 16px;
 	padding-top: 15px;
 	margin-bottom: 1em;
@@ -44,7 +54,7 @@
 }
 
 .project-description {
-	color: var(--secondary-color);
+	color: var(--secondary-text-color);
 }
 
 .project-link {
