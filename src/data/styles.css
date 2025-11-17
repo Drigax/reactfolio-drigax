@@ -5,11 +5,15 @@
 	--tertiary-color: #acacb4;
 	--quaternary-color: #ddfcad;
 	--link-color: #19cf37;
+	--nav-active-color: #17bb32;
+
 	--white-color: #f4f4f5;
 	--primary-text-color: #fefeff;
 	--secondary-text-color: #f4f4f5;
+	--tertiary-text-color: #ededf0;
 	--primary-text-color-hover : #141414;
 	--secondary-text-color-hover: #202020;
+	--link-color-hover: #17bb32;
 	/* ---------------------- */
 
 	/* ------- fonts ------- */

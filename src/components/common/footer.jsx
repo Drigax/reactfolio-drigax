@@ -29,7 +29,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2024 Nicholas Barlow. All Rights Reserved.
+						© 2025 Nicholas Barlow. All Rights Reserved.
 					</div>
 				</div>
 			</div>

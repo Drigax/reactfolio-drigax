@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
 	faTwitter,
+	faBluesky,
 	faGithub,
 	faLinkedin,
 	faInstagram,
+	faMastodon,
 } from "@fortawesome/free-brands-svg-icons";
 
 import INFO from "../../data/user";
@@ -24,6 +26,18 @@ const Socials = () => {
 						/>
 					</div>
 					<div className="social-text">Follow on Twitter</div>
+				</a>
+			</div>
+
+			<div className="social">
+				<a href={INFO.socials.bluesky} target="_blank" rel="noreferrer">
+					<div className="social-icon">
+						<FontAwesomeIcon
+							icon={faBluesky}
+							className="social-icon"
+						/>
+					</div>
+					<div className="social-text">Follow on Bluesky</div>
 				</a>
 			</div>
 
@@ -70,6 +84,19 @@ const Socials = () => {
 					<div className="social-text">Follow on Instagram</div>
 				</a>
 			</div>
+
+			<div className="social">
+				<a href={INFO.socials.mastodon} target="_blank" rel="noreferrer">
+					<div className="social-icon">
+						<FontAwesomeIcon
+							icon={faMastodon}
+							className="social-icon"
+						/>
+					</div>
+					<div className="social-text">Follow on Mastodon</div>
+				</a>
+			</div>
+
 
 			<div className="email">
 				<div className="email-wrapper">

@@ -61,6 +61,11 @@
 	transition: color 0.3s ease-in-out;
 }
 
+.homepage-article:hover .homepage-article-link {
+	color: var(--link-color-hover);
+	transition: color 0.3s ease-in-out;
+}
+
 .homepage-article-description {
 	opacity: 1;
 	color: var(--secondary-text-color);

@@ -23,7 +23,7 @@
 }
 
 .article-right-side:hover {
-	background: #fafafa;
+	background: var(--quaternary-color);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -31,19 +31,29 @@
 .article-date {
 	padding-top: 30px;
 	font-size: 15px;
-	color: var(--tertiary-color);
+	color: var(--tertiary-text-color);
 }
 
 .article-title {
-	color: #000000;
+	color: var(--primary-text-color);
 	font-size: 16px;
 	font-weight: 600;
+}
+
+.article-right-side:hover .article-title {
+	color: var(--primary-text-color-hover);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.article-right-side:hover .article-description {
+	color: var(--secondary-text-color-hover);
+	transition: background-color 0.3s ease-in-out;
 }
 
 .article-description {
 	padding-top: 10px;
 	font-size: 12px;
-	color: var(--secondary-color);
+	color: var(--secondary-text-color);
 	font-weight: 480;
 	line-height: 25px;
 }

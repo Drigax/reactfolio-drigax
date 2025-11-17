@@ -9,7 +9,7 @@ const INFO = {
   socials: {
     twitter: 'https://twitter.com/nicklowbar',
     bluesky: 'https://bsky.app/profile/nicklowbar.bsky.social',
-    mastodon: 'https://mastodon.social/@nicklowbar',
+    mastodon: 'https://peoplemaking.games/@nicklowbar',
     github: 'https://github.com/nicklowbar',
     linkedin: 'https://linkedin.com/in/nicholas-z-barlow',
     instagram: 'https://instagram.com/nicklowbar',
@@ -30,10 +30,9 @@ const INFO = {
   },
 
   about: {
-    title:
-        'I’m Nicholas Barlow. I\'m a programmer suffering from an art habit. Currently based in the Greater Seattle Area.',
+    title: 'I’m Nicholas Barlow. ',
     description:
-        'I\'ve worked on a good number of projects over the years, and here are some of the ones I\'m most proud of. I hope you enjoy them!',
+        'I\'m a programmer suffering from an art habit. I\'m a creative that crafts software solutions. I have experience working on Operating sytsems, Linux-based multi-application IoT solutions, Real time rendering, Cross platform game development, and Network programming. Currently based in the Seattle Area.',
   },
 
   articles: {
