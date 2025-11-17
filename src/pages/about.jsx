@@ -5,6 +5,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
+import OpenGraphMeta from "../components/openGraph/openGraphMeta";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -28,6 +29,13 @@ const About = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
+			<OpenGraphMeta
+				title={`About | ${INFO.main.title}`}
+				description={currentSEO.description}
+				url={`${INFO.main.url}/about`}
+				image={`${INFO.main.logo}`}
+				siteName={`${INFO.main.sitename}`}
+			/>
 
 			<div className="page-content">
 				<NavBar active="about" />

@@ -5,6 +5,7 @@ import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 
 import NavBar from "../components/common/navBar";
 import Logo from "../components/common/logo";
+import OpenGraphMeta from "../components/openGraph/openGraphMeta";
 
 import INFO from "../data/user";
 
@@ -17,6 +18,13 @@ const Notfound = () => {
 
 	return (
 		<React.Fragment>
+			<OpenGraphMeta
+				title={`404 | ${INFO.main.title}`}
+				description={`Page Not Found | ${INFO.main.title}`}
+				url={`${INFO.main.url}/404`}
+				image={`${INFO.main.logo}`}
+				siteName={`${INFO.main.sitename}`}
+			/>
 			<div className="not-found page-content">
 				<NavBar />
 				<div className="content-wrapper">

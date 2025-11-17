@@ -1,9 +1,11 @@
 const INFO = {
   main: {
-    title: 'Reactfolio-drigax by nicklowbar',
+    title: 'Nick Barlow\'s portfolio',
     name: 'Nicholas Barlow',
     email: 'nicklowbar@gmail.com',
-    logo: '../images/logo.png',
+    logo: '/images/logo.png',
+    url: 'https://nicklowbar.com',
+    sitename: 'nicklowbar'
   },
 
   socials: {

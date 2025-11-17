@@ -6,8 +6,10 @@ import styled from "styled-components";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
+import OpenGraphMeta from "../components/openGraph/openGraphMeta";
 
 import INFO from "../data/user";
+import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/readArticle.css";
@@ -19,6 +21,7 @@ const ReadArticle = () => {
 	let { slug } = useParams();
 
 	const article = myArticles[slug - 1];
+	const currentSEO = SEO.find((item) => item.page === "articles");
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -35,6 +38,14 @@ const ReadArticle = () => {
 				<meta name="description" content={article().description} />
 				<meta name="keywords" content={article().keywords.join(", ")} />
 			</Helmet>
+
+			<OpenGraphMeta
+				title={`${article().title} | ${INFO.main.title}`}
+				description={currentSEO.description}
+				url={`${INFO.main.url}/${article().url}`}
+				image={`${INFO.main.logo}`}
+				siteName={`${INFO.main.sitename}`}
+			/>
 
 			<div className="page-content">
 				<NavBar />

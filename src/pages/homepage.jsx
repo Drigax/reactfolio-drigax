@@ -18,6 +18,7 @@ import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
+import OpenGraphMeta from "../components/openGraph/openGraphMeta";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -80,6 +81,14 @@ const Homepage = () => {
 					content={currentSEO.keywords.join(", ")}
 				/>
 			</Helmet>
+			
+			<OpenGraphMeta
+				title={`${INFO.main.title}`}
+				description={currentSEO.description}
+				url={`${INFO.main.url}`}
+				image={`${INFO.main.logo}`}
+				siteName={`${INFO.main.sitename}`}
+			/>
 
 			<div className="page-content">
 				<NavBar active="home" />
