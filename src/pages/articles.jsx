@@ -60,7 +60,7 @@ const Articles = () => {
 											date={article.date}
 											title={article.title}
 											description={article.description}
-											link={article.override_link ? article.override_link : "/article/" + (index + 1)}
+											link={article.link }
 										/>
 									</div>
 								)).reverse()}

@@ -18,15 +18,11 @@ const INFO = {
   homepage: {
     title: 'Experienced Systems Programmer that loves to do cool stuff.',
     description:
-        `I am a Software Engineer with expertise in a wide array of operating systems, game engines, 3d frameworks, full stack web development tools, and GPU acceleration frameworks.\r\n\
-			
-		I have experience in building performant, feature-rich, secure and reliable applications using various frameworks, environments, technologies and constraints. \r\n\
-			
-		I love solving difficult problems and take every new opportunity to widen my skillset.\r\n\
-			
-		I am passionate about writing high-quality, highly-maintainable solutions that implement healthy software practices and leverage industry standards.\r\n\
-			
-		I am always looking for new opportunities to do cool stuff.`,
+        `I am a Software Engineer with expertise in a wide array of operating systems, game engines, 3d frameworks, full stack web development tools, and GPU acceleration frameworks.\n
+I have experience in building performant, feature-rich, secure and reliable applications using various frameworks, environments, technologies and constraints. \n
+I love solving difficult problems and take every new opportunity to widen my skillset.\n
+I am passionate about writing high-quality, highly-maintainable solutions that implement healthy software practices and leverage industry standards.\n
+I am always looking for new opportunities to do cool stuff.`,
   },
 
   about: {
@@ -156,6 +152,25 @@ const INFO = {
       duration: `Summer 2013`,
     },
   ],
+  contact: {
+    title: 'Let\'s Get In Touch!',
+    content: `Thank you for your interest in reaching out!            
+I welcome your feedback, questions, and
+suggestions. 
+                  
+If you have a specific question or
+comment, please feel free to email me directly.
+I make an effort to respond to all messages within
+48 hours, although it may take me longer during busy
+periods. 
+        
+Finally, if you prefer to connect on
+social media, you can find me on the following social networks.
+    
+Thanks again for your interest, and I look forward
+to hearing from you!`
+
+  }
 };
 
 export default INFO;

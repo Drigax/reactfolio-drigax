@@ -60,7 +60,7 @@
 .project-link {
 	display: flex;
 	align-items: center;
-	color: var(--secondary-color);
+	color: var(--quaternary-color);
 	font-size: 12px;
 	padding-top: 20px;
 }

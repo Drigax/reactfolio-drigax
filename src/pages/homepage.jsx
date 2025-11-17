@@ -98,7 +98,7 @@ const Homepage = () => {
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+									<p>{INFO.homepage.description}</p>
 								</div>
 							</div>
 
@@ -111,6 +111,7 @@ const Homepage = () => {
 											alt="Rainbow Cascade! A procedurally generated rainbow scene"
 											className="homepage-video"
 											autoplay="true"
+											muted="true"
 											loop="true"
 										/>
 									</div>
@@ -207,10 +208,10 @@ const Homepage = () => {
 											date={article.date}
 											title={article.title}
 											description={article.description}
-											link={"/article/" + (index + 1)}
+											link={article.link}
 										/>
 									</div>
-								))}
+								)).reverse()}
 							</div>
 
 							<div className="homepage-works">

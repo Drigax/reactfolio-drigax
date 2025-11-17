@@ -13,8 +13,18 @@
 	top: 4vh;
 }
 
-.contact-subtitle {
+.contact-title {
 	width: 100% !important;
+	color: var(--white-color);
+}
+
+.contact-content {
+	width: 100% !important;
+	color: var(--primary-text-color);
+	font-size: 18px;
+	padding-top: 48px;
+	padding-left: 24px;
+	white-space: pre-wrap;
 }
 
 .contact-container {
