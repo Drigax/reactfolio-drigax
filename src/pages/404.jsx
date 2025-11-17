@@ -22,7 +22,7 @@ const Notfound = () => {
 				title={`404 | ${INFO.main.title}`}
 				description={`Page Not Found | ${INFO.main.title}`}
 				url={`${INFO.main.url}/404`}
-				image={`${INFO.main.logo}`}
+				image={`${INFO.main.url}/${INFO.main.logo}`}
 				siteName={`${INFO.main.sitename}`}
 			/>
 			<div className="not-found page-content">

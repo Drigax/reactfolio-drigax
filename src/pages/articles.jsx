@@ -34,7 +34,7 @@ const Articles = () => {
 				title={`Articles | ${INFO.main.title}`}
 				description={currentSEO.description}
 				url={`${INFO.main.url}/articles`}
-				image={`${INFO.main.logo}`}
+				image={`${INFO.main.url}/${INFO.main.logo}`}
 				siteName={`${INFO.main.sitename}`}
 			/>
 

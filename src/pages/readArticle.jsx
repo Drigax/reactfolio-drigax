@@ -43,7 +43,7 @@ const ReadArticle = () => {
 				title={`${article().title} | ${INFO.main.title}`}
 				description={currentSEO.description}
 				url={`${INFO.main.url}/${article().url}`}
-				image={`${INFO.main.logo}`}
+				image={`${INFO.main.url}/${INFO.main.logo}`}
 				siteName={`${INFO.main.sitename}`}
 			/>
 

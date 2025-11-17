@@ -34,7 +34,7 @@ const Projects = () => {
 				title={`Projects | ${INFO.main.title}`}
 				description={currentSEO.description}
 				url={`${INFO.main.url}/projects`}
-				image={`${INFO.main.logo}`}
+				image={`${INFO.main.url}/${INFO.main.logo}`}
 				siteName={`${INFO.main.sitename}`}
 			/>
 

@@ -86,7 +86,7 @@ const Homepage = () => {
 				title={`${INFO.main.title}`}
 				description={currentSEO.description}
 				url={`${INFO.main.url}`}
-				image={`${INFO.main.logo}`}
+				image={`${INFO.main.url}/${INFO.main.logo}`}
 				siteName={`${INFO.main.sitename}`}
 			/>
 

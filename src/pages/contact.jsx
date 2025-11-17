@@ -34,7 +34,7 @@ const Contact = () => {
 				title={`Contact | ${INFO.main.title}`}
 				description={currentSEO.description}
 				url={`${INFO.main.url}/contact`}
-				image={`${INFO.main.logo}`}
+				image={`${INFO.main.url}/${INFO.main.logo}`}
 				siteName={`${INFO.main.sitename}`}
 			/>
 
